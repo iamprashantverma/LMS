@@ -1,0 +1,134 @@
+.mem-book-card-container {
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.mem-book-card-container:hover {
+  transform: scale(1.02);
+}
+
+.mem-book-card-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.mem-book-card-image {
+  width: 120px;
+  height: 120px;
+  border-radius: 4px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f4f4f4;
+}
+
+.mem-book-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.mem-book-card-header-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; 
+  align-items: flex-start;
+  position: relative;
+  top: -15px; 
+}
+
+.mem-book-card-header-content p:first-child {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #222;
+  margin-bottom: 2px; 
+}
+
+
+.mem-book-card-header-content a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: .7em;
+}
+
+.mem-book-card-header-content a:hover {
+  text-decoration: underline;
+}
+
+
+.mem-book-card-image img[src=""],
+.mem-book-card-image img:not([src]) {
+  display: none;
+}
+
+.mem-book-card-footer {
+  margin-top: 12px;
+}
+
+.mem-book-detail-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.mem-card-items {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  color: #555;
+}
+
+.available {
+  color: green;
+  font-weight: bold;
+}
+
+.notavailable {
+  color: red;
+  font-weight: bold;
+}
+
+/* If no image, adjust padding for alignment */
+.mem-book-card-header-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.mem-book-card-button-action {
+  margin-top: 12px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.mem-book-card-button-action button {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: #dc3545;
+  color: #fff;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.3s;
+}
+
+.mem-book-card-button-action button:hover {
+  background: #c82333;
+}

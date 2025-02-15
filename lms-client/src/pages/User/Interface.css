@@ -1,0 +1,19 @@
+.interface-container{
+    width: 100%;
+    max-width: 100dvw;
+    height: 100%;
+    overflow-y: scroll;
+    padding: 2%;
+}
+.interface-container::-webkit-scrollbar{
+    display: none;
+}
+.interface-container h1{
+    font-size: 1.7em;
+}
+.mem-book-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    gap:10px;
+}

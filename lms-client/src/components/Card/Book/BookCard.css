@@ -1,0 +1,149 @@
+.book-card-container {
+  display: flex;
+  flex-direction: column;
+  height: 250px;
+  width: 100%;
+  background-color: #ffffff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+}
+
+.book-card-container:hover {
+  transform: scale(1.01);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.book-Header {
+  display: flex;
+  gap: 5%;
+  word-wrap: break-word;
+  width: 100%;
+}
+
+.book-card-image {
+  flex: 0 0 45%;
+  padding: 3%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.book-card-image img {
+  width: 100px;
+  height: 100px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.book-card-header-content {
+  padding-top: 3%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  justify-content: flex-start;
+}
+
+.book-card-header-content p {
+  color: #475569;
+  word-wrap: break-word;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.book-card-header-content p:first-child {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #1e293b;
+}
+
+.book-card-header-content p:nth-child(2) {
+  font-size: .9rem;
+  font-weight: 600;
+  color: #3b82f6;
+}
+.book-card-header-content p:nth-child(3) {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.book-footer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 50%;
+  overflow:hidden;
+}
+
+.book-card-footer-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 2%;
+}
+
+.book-card-footer-content p {
+  color: #64748b;
+  font-size: 0.875rem;
+}
+
+.book-action-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: auto;
+  padding:2%;
+}
+
+.approve-button,
+.reject-button {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  font-size: 0.7rem;
+  font-weight: 500;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+}
+
+.approve-button {
+  background-color: #22c55e;
+  color: #ffffff;
+}
+
+.approve-button:hover {
+  background-color: #16a34a;
+}
+
+.approve-button:disabled {
+  background-color: #d1fae5;
+  color: #6ee7b7;
+  cursor: not-allowed;
+}
+
+.reject-button {
+  background-color: #ef4444;
+  color: #ffffff;
+}
+
+.reject-button:hover {
+  background-color: #dc2626;
+}
+
+.reject-button:disabled {
+  background-color: #fecaca;
+  color: #f87171;
+  cursor: not-allowed;
+}
+
+

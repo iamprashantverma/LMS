@@ -1,0 +1,121 @@
+.member-card-container {
+    border: 2px solid #00b894; 
+    border-radius: 8px;
+    background-color: #f9f9f9; 
+    padding: 16px;
+    width: 80%;
+    height: 90%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .member-card-container:hover {
+    transform: scale(1.02); 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); 
+  }
+  
+
+  .member-content {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+  }
+  
+
+  .member-img {
+    width: 80px;
+    height: 80px;
+    background-color: #74b9ff; 
+    border-radius: 50%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+  } 
+  
+
+  .member-info {
+    flex: 1; 
+    display: flex;
+    flex-direction: column;
+    gap: 8px; 
+    font-size: 16px;
+    line-height: 1.5;
+    color: #2d3436;
+  }
+   
+  .member-info p {
+    margin: 0;
+  }
+  
+  .action-container {
+    margin-top: 16px;
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+  }
+  
+  .action-container button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .action-container button:first-child {
+    background-color: #55efc4; 
+    color: #2d3436;
+  }
+  
+  .action-container button:first-child:hover {
+    background-color: #00b894;
+    color: white;
+  }
+  
+  .action-container button:last-child {
+    background-color: #fab1a0; 
+    color: #2d3436;
+  }
+  
+  .action-container button:last-child:hover {
+    background-color: #d63031;
+    color: white;
+  }
+  
+  .active {
+    color: green;
+    font-weight: bold;
+  }
+  
+  .inactive {
+    color: red;
+    font-weight: bold;
+  }
+
+  @media (max-width: 768px) {
+    .member-content {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .member-img {
+      margin-bottom: 12px;
+    }
+  
+    .member-info {
+      align-items: center;
+    }
+  
+    .action-container {
+      flex-direction: column;
+      gap: 12px;
+    }
+  }
+  

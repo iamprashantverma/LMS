@@ -1,0 +1,59 @@
+/* General Styling */
+.record-card {
+    background-color: #f9f9f9; 
+    color: #333; 
+    border: 1px solid #ccc; 
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    padding: 16px;
+    margin: 16px auto;
+    max-width: 400px;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Title Styling */
+  .record-title {
+    color: #007bff;
+    font-size: 1.5em;
+    margin-bottom: 12px;
+    text-align: center;
+  }
+  
+  /* Text Styling */
+  .record-card p {
+    font-size: 1em;
+    line-height: 1.5;
+    margin: 8px 0;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .record-card {
+      padding: 12px;
+      max-width: 90%; 
+    }
+  
+    .record-title {
+      font-size: 1.2em;
+    }
+  
+    .record-card p {
+      font-size: 0.9em;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .record-card {
+      padding: 10px;
+      max-width: 95%;
+    }
+  
+    .record-title {
+      font-size: 1em;
+    }
+  
+    .record-card p {
+      font-size: 0.85em;
+    }
+  }
+  

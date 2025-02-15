@@ -1,0 +1,20 @@
+.dashboard-container {
+  height: 100%;  
+  width: 100%;
+  max-width: 100dvw;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-template-rows: repeat(2,1fr);
+  padding:2%;
+
+}
+.graph-container{
+
+  grid-column-start: 4;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}

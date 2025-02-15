@@ -1,0 +1,44 @@
+.record-container {
+    background-color: #f4f6f9;
+    color: #333;
+    width: 100%;
+    height: 100%;
+   
+  }
+  .record-date-container label{
+    height: 30%;
+    font-size: 1.3em;
+  }
+  .record-input-container{
+    width: 50%;
+    height: 70%;
+    display: flex;  
+    align-items: center;
+    gap: 10%;
+    justify-content: space-evenly;
+  }
+  .record-date-container{
+    padding: 5px;
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .record-data-grid {
+    height: 70%;
+    width: 100%;
+    display: flex;
+  }
+  .all-record-footer{
+    height: 10%;
+    width: 100%;
+    /* border: 5px solid rgb(169, 57, 19); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  
+  

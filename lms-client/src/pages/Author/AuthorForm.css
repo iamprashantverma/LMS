@@ -1,0 +1,104 @@
+/* Unique styling for the author form */
+.author-form-container {
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .author-form-heading {
+    font-size: 2rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .author-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .author-form-field {
+    margin-bottom: 15px;
+  }
+  
+  .author-form-label {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 5px;
+    display: inline-block;
+  }
+  
+  .author-form-input {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+  }
+  
+  .author-form-input:focus {
+    border-color: #6c63ff;
+    outline: none;
+  }
+  
+  .author-form-submit {
+    padding: 12px 20px;
+    font-size: 1rem;
+    background-color: #6c63ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .author-form-submit:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  .author-form-submit:hover:not(:disabled) {
+    background-color: #5a54e7;
+  }
+  
+  .author-form-error {
+    color: red;
+    font-size: 0.9rem;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .author-form-container {
+      padding: 15px;
+    }
+  
+    .author-form-heading {
+      font-size: 1.8rem;
+    }
+  
+    .author-form-submit {
+      font-size: 1.1rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .author-form-container {
+      padding: 10px;
+    }
+  
+    .author-form-heading {
+      font-size: 1.6rem;
+    }
+  
+    .author-form-submit {
+      font-size: 1.2rem;
+    }
+  }
+  

@@ -37,7 +37,7 @@ public class AppConfig {
         return new ModelMapper();
     }
 
-    /* creating bean of the Password Ecnoder */
+    /* creating bean of the Password Encoder */
     @Bean
     public PasswordEncoder getPasswordEncode() {
         return new BCryptPasswordEncoder();

@@ -50,4 +50,12 @@ export const getMyBorrowedBooks = async () => {
         throw error.response.data;
     }
 };
+export const reserveBook = async (bookId) => {
+    try {
+        const response = await apiClient.post(`/reserve/${bookId}`);
+        return response.data;
+    } catch (error) {
+        throw error.response.data;
+    }
+};
 

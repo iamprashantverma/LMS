@@ -16,7 +16,6 @@ function Book() {
   const [currentPage, setCurrentPage] = useState(0);
   const [totalPages, setTotalPages] = useState(0);
   const [error, setError] = useState(null);
-  console.log(id);
   const fetchBooks = useCallback(async () => {
     try {
       let resp;

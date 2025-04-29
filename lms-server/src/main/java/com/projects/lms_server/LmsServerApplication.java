@@ -8,7 +8,6 @@ public class LmsServerApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(LmsServerApplication.class, args);
-//		 finally i  added this into the git
 		System.out.println("Application is Running ");
 	}
 

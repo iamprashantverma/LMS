@@ -132,3 +132,29 @@
 .mem-book-card-button-action button:hover {
   background: #c82333;
 }
+
+.reserve-btn {
+  padding: 6px 12px;
+  background-color: #1d72b8;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 0.5rem;
+}
+
+.reserve-btn:hover {
+  background-color: #155a96;
+}
+
+.available {
+  color: green;
+  font-weight: bold;
+}
+
+.notavailable {
+  color: #c0392b;
+  font-weight: bold;
+  margin-top: 0.5rem;
+}

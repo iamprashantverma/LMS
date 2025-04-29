@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { FaCheckCircle, FaTimesCircle } from "react-icons/fa";
 
 function BookCard({ book, setAction, bookAction }) {
-
+  console.log(book,"SAdfsd")
   const authorNames = book?.authors &&
     book.authors.map((author) => {
       const nameMatch = author.match(/name=([^,]+)/);

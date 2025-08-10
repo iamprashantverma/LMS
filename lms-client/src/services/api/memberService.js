@@ -11,6 +11,19 @@ const apiClient = axios.create({
     },
 });
 
+export const getMyDetails = async (id) => {
+    try {
+        const response = await apiClient.get(`/member/${id}`, {
+            headers: {
+                Authorization: '', 
+            },
+        });
+        return response.data;
+    } catch (error) {
+        throw error.response.data;
+    }
+};
+
 export const getAllBooks = async (page) => {
     try {
         const response = await apiClient.get(`/book?page=${page}`, {

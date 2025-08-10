@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
 import { findMember } from '../../services/api/adminService';
-import { useContext } from 'react';
+import { getMyDetails } from '../../services/api/memberService';
 import { AuthContext } from '../../Context/AuthContext';
 import "./Profile.css";
 
@@ -14,16 +14,23 @@ function Profile() {
     setError(null);
     const getData = async () => {
       try {
-        const data = await findMember(user.userId);
-        setMember(data);
+        let data;
+        if (user.role === 'MEMBER') {
+          data = await getMyDetails(user.userId);
+          setMember(data.data);
+        } else {
+          data = await findMember(user.userId);
+          setMember(data);
+        }
+
       } catch (err) {
-        setError(err.error.message);
+        setError(err?.error?.message || 'Something went wrong');
       } finally {
         setLoading(false);
       }
     };
     getData();
-  }, [user.userId]);
+  }, [user.role, user.userId]);
 
   if (loading) {
     return <div>Loading...</div>;
@@ -39,9 +46,8 @@ function Profile() {
 
   return (
     <div className="profile-container">
-      <h1>Admin Profile</h1>
+      <h1>{user.role === 'MEMBER' ? 'Member Profile' : 'Admin Profile'}</h1>
 
-      {/* Profile Image */}
       <div className="profile-image-container">
         <img
           src={member.image || "img_girl.jpg"}
@@ -52,7 +58,6 @@ function Profile() {
       </div>
       
       <div className="profile-details">
-        {/* <p><strong>Name:</strong> {member.name}</p> */}
         <p><strong>Email:</strong> {member.email}</p>
         <p><strong>Status:</strong> {member.isActive ? 'Active' : 'Inactive'}</p>
         <p><strong>Enrollment Date:</strong> {member.enrollmentDate}</p>

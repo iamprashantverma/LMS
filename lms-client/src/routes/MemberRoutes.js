@@ -6,6 +6,7 @@ import DashBoard from '../pages/User/DashBoard';
 import ProtectedRoutes from './ProtectedRoutes';
 import Interface from '../pages/User/Interface';
 import Book from '../pages/Books/Book';
+import Profile from '../pages/Admin/Profile';
 
 
 function MemberRoutes() {
@@ -13,6 +14,7 @@ function MemberRoutes() {
     <Routes>
         <Route element= {<ProtectedRoutes/>} >
           <Route path='/'  element={<Layout/>} >
+          <Route path='profile' element={<Profile />} />
           <Route path='dashboard' element={<DashBoard/>} />
           <Route index element={<Home/>} />  
           <Route path='interface' element={<Interface/>} />

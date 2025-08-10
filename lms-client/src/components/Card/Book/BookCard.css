@@ -16,7 +16,7 @@
 
 .book-Header {
   display: flex;
-  gap: 5%;
+  gap: 1%;
   word-wrap: break-word;
   width: 100%;
 }

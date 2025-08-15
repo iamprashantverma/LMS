@@ -9,7 +9,7 @@ A modern **Library Management Application** built to streamline library operatio
 **Book Hive** is a full-featured library management system that allows users to reserve books, read e-books, and enables admins to manage the library efficiently. The system comes with a **dashboard for admins**, detailed reporting, automated fine calculation, **role-based access control (RBAC)**, and **email notifications**.  
 
 This project is built using a **modern tech stack**:  
-- **Backend:** Java, Spring Boot, REST APIs  
+- **Backend:** Java, Spring Boot, REST APIs ,Hibernate ORM 
 - **Frontend:** React, CSS, HTML, JavaScript  
 - **Database:** MySQL  
 - **Build Tool:** Maven  

@@ -4,7 +4,7 @@ A modern **Library Management Application** built to streamline library operatio
 
 ---
 
-## 🚀 About
+##  About
 
 **Book Hive** is a full-featured library management system that allows users to reserve books, read e-books, and enables admins to manage the library efficiently. The system comes with a **dashboard for admins**, detailed reporting, automated fine calculation, **role-based access control (RBAC)**, and **email notifications**.  
 
@@ -18,7 +18,7 @@ This project is built using a **modern tech stack**:
 
 ---
 
-## 🛠 Features
+##  Features
 
 ### User Features
 - Reserve books for **24 hours**.  
@@ -48,7 +48,7 @@ This project is built using a **modern tech stack**:
 
 ---
 
-## 📊 Tech Stack
+##  Tech Stack
 
 | Frontend       | Backend       | Database   | Authentication & Security | Notifications | Others        |
 |----------------|---------------|------------|---------------------------|---------------|---------------|
